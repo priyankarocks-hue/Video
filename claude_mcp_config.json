@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "deriv-trading": {
+      "command": "uv",
+      "args": ["run", "deriv-mcp"],
+      "env": {
+        "DERIV_API_TOKEN": "YOUR_DERIV_API_TOKEN_HERE",
+        "DERIV_APP_ID": "1089"
+      }
+    }
+  }
+}

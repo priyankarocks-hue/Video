@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "deriv-mcp"
+version = "0.1.0"
+description = "Deriv Trading MCP Server — Connect Claude to your Deriv account"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "mcp>=1.9.0",
+    "websockets>=13.0",
+]
+
+[project.scripts]
+deriv-mcp = "deriv_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/deriv_mcp"]
